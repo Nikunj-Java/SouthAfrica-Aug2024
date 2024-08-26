@@ -128,8 +128,38 @@ Tyeps:
 Data bindingd can be done in two  ways
 	a. Interpolation Bindings {{data}}
 	b. Property Binding[]
+	c. class binding
 	
 
+goto> binding.components.ts file and add below array
 
+ products=[{name:"pencile",price:"8.3",availability:"26-08-2024",rating:4.8},
+    {name:"pen",price:"10",availability:"27-08-2024",rating:4.5},
+    {name:"eraser",price:"8.9",availability:"26-08-2024",rating:5.0},
+    {name:"scale",price:"12",availability:"26-08-2024",rating:4.9},
+    {name:"books",price:"15",availability:"30-08-2024",rating:5.0}
+  ]
+
+
+binding.component.html
+----------------------
+
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr><th>Name</th><th>Price</th><th>Availability</th><th>Ratings</th></tr>
+        </thead>
+        <tbody>
+            <!--Class binding Needed: NgDirectives-->
+            <tr *ngFor="let p of products">
+                <td>{{p.name}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.availability}}</td>
+                <td>{{p.rating}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
 
 

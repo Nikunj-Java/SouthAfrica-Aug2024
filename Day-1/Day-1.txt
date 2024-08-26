@@ -63,3 +63,58 @@ You will see first.js file will be prepared automatically
 	     > node first.js
 
 
+To Create tsConfig.json
+> tsc --init
+
+
+************************************************************************
+STEP:4 INSTALLING ANGULAR
+************************************************************************
+
+> npm install -g @angular/cli@14  (Or npm i -g @angular/cli14)
+
+let's Create Angular Application
+
+> ng new myapp  (myapp is application name-AnyName Without Space Canbe Used)
+	it will ask you two questions
+	1. do you want to add angular routing? -yes
+	2. choose css-css
+once the app is ready you need to change the directory OR Simpli  open the folder of your app again to start
+	> cd myapp
+
+to start the Application
+
+	> ng serve
+
+***********************************************************************
+COMPONENTS
+***********************************************************************
+>goto> new terminal> ng generate component mycomponent  OR ng g c myComponent
+> goto yourcomponent.ts file > copy the selector. 
+> app.component.html file
+
+add the tag like this
+
+<app-yourcomponet></app-yourcomponet>
+
+
+<h1>My Angular App 1.0</h1>
+
+<app-header></app-header>
+<app-footer></app-footer>
+
+
+--------------------------------------------------
+INSTALLING BOOTSTRAP
+--------------------------------------------------
+>npm install bootstrap or npm i bootstrap
+
+goto> style.css file
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+save the project and check the out put
+
+
+
+

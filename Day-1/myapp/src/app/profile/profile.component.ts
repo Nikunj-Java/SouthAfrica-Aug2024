@@ -12,4 +12,10 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  flag:boolean=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
+  
 }

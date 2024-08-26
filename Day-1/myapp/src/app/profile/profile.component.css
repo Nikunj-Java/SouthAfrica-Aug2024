@@ -1,0 +1,21 @@
+.profile-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 2em;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  

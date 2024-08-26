@@ -105,7 +105,7 @@ add the tag like this
 
 
 --------------------------------------------------
-INSTALLING BOOTSTRAP
+2. INSTALLING BOOTSTRAP
 --------------------------------------------------
 >npm install bootstrap or npm i bootstrap
 
@@ -117,7 +117,7 @@ save the project and check the out put
 
 
 *******************************************************
-2. Binding in Angular
+3. Binding in Angular
 *******************************************************
 
 Tyeps:
@@ -125,10 +125,11 @@ Tyeps:
 	2. View to Source (.html to .ts)
 	3. Source to view , view to Source (Two way bindings)
 
-Data bindingd can be done in two  ways
+Data bindings can be done in two  ways
 	a. Interpolation Bindings {{data}}
 	b. Property Binding[]
-	c. class binding
+	c. class | style binding
+	d. event binding 
 	
 
 goto> binding.components.ts file and add below array
@@ -162,4 +163,27 @@ binding.component.html
 
 </div>
 
+
+Event Binding:
+-----------------------------------------------
+binding.component.html
+------------------------
+<div class="container">
+
+    <button (click)="show()" class="btn btn-primary">Show</button>
+
+    <div *ngIf="flag" style="background-color: yellowgreen;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore incidunt rerum veniam blanditiis odio fuga soluta vel numquam voluptatibus porro ut doloribus praesentium dolorum reprehenderit, molestiae labore! Quod, quia illo.
+    </div>
+
+</div>
+
+binding.component.ts
+---------------------------
+
+flag:boolean=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
 

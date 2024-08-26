@@ -1,10 +1,14 @@
 <p>binding works!</p>
 
+<h4>Step:2 communication from ts to View</h4>
 <h2>{{name}}</h2>
+
+<h4>Step:3 Property Binding</h4>
 
 <a [href]="url">Click Here to Open Google</a>
 
-<h3>Class Binding</h3>
+<h3 style="color: red;"><h4>Step:4 Class Binding</h4></h3>
+
 
 <p [class.myColor]="true">My Data</p>
 
@@ -26,5 +30,17 @@
             </tr>
         </tbody>
     </table>
+
+</div>
+
+
+<h3 style="color: royalblue;">Step:5 Event Binding</h3>
+<div class="container">
+
+    <button (click)="show()" class="btn btn-primary">Show</button>
+
+    <div *ngIf="flag" style="background-color: yellowgreen;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore incidunt rerum veniam blanditiis odio fuga soluta vel numquam voluptatibus porro ut doloribus praesentium dolorum reprehenderit, molestiae labore! Quod, quia illo.
+    </div>
 
 </div>

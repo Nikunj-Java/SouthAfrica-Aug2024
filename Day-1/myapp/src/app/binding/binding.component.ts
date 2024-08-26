@@ -22,6 +22,12 @@ export class BindingComponent implements OnInit {
     {name:"scale",price:"12",availability:"26-08-2024",rating:4.9},
     {name:"books",price:"15",availability:"30-08-2024",rating:5.0}
   ]
+
+  flag:boolean=false;
+
+  show(){
+    this.flag=!this.flag;
+  }
   
 
 }

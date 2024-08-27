@@ -1,0 +1,18 @@
+/* Add any additional custom styles here */
+
+.container {
+    max-width: 600px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item {
+    font-size: 1.1rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.9rem;
+  }
+  

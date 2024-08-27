@@ -10,6 +10,7 @@ import { ChangeColorDirective } from './changeColorDirective';
 import { HighLightDirective } from './HighLightDirective';
 import { WheatherAppComponent } from './wheather-app/wheather-app.component';
 import { ChildComponent } from './child/child.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ChildComponent } from './child/child.component';
     ChangeColorDirective,
     HighLightDirective,
     WheatherAppComponent,
-    ChildComponent
+    ChildComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

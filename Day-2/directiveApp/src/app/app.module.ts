@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindingComponent
+    BindingComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,

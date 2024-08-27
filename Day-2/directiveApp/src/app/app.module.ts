@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { DirectiveComponent } from './directive/directive.component';
 import { ChangeColorDirective } from './changeColorDirective';
 import { HighLightDirective } from './HighLightDirective';
+import { WheatherAppComponent } from './wheather-app/wheather-app.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { HighLightDirective } from './HighLightDirective';
     BindingComponent,
     DirectiveComponent,
     ChangeColorDirective,
-    HighLightDirective
+    HighLightDirective,
+    WheatherAppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

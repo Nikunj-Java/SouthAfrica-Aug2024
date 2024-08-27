@@ -1,4 +1,22 @@
 <h2>Directive Application</h2>
 
-<app-binding></app-binding>
-<app-directive></app-directive>
+
+
+<div class="container">
+
+    <h1 class="bg-info">Parent Component</h1>
+    <h2>Parent Sending a Data to Child:</h2>
+    <input type="text" (keyup)="0" #pdata>  
+    <h2>Value coming from Child : {{cdata}}</h2>
+</div>
+
+ 
+    <app-child [pdata]="pdata.value" (cevent)="cdata=$event"></app-child>
+    
+ 
+
+
+<!--<app-wheather-app></app-wheather-app>-->
+
+<!--<app-binding></app-binding>-->
+<!--<app-directive></app-directive>-->

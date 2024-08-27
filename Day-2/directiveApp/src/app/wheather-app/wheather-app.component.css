@@ -1,0 +1,47 @@
+.zoom-card {
+    transform: scale(1.1); /* Reduced from 1.2 to 1.1 */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 2rem; /* Add more space at the bottom */
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  i {
+    color: #007bff;
+  }
+  
+  .bg-primary {
+    background-color: lightblue !important;
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+  
+  /* Border style for today's weather card */
+  .border-today {
+    border: 3px solid blue !important; /* Yellow border */
+  }
+  
+  .row {
+    margin-bottom: 2rem; /* Add more space between rows */
+  }
+  
+  .col-md-4 {
+    padding-bottom: 2rem; /* Add padding to avoid overlapping */
+  }
+  

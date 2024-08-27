@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { BindingComponent } from './binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveComponent } from './directive/directive.component';
+import { ChangeColorDirective } from './changeColorDirective';
+import { HighLightDirective } from './HighLightDirective';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    ChangeColorDirective,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,

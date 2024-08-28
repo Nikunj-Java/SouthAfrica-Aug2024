@@ -1,1 +1,16 @@
-<p>gallary works!</p>
+<div class="container">
+    <h1>Gallary Component</h1>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="child-a" routerLinkActive="active">Child A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="child-b" >Child B</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row" style="border: 2px solid red; padding: 1rem;">
+        <router-outlet></router-outlet>
+    </div>
+</div>

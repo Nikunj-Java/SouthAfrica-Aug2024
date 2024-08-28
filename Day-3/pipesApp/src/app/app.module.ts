@@ -15,6 +15,8 @@ import { FormComponent } from './form/form.component';
 import { TformComponent } from './tform/tform.component';
 import { RformComponent } from './rform/rform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LabComponent } from './lab/lab.component';
+import { CustomDatePipe } from './CustomDatePipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ChildBComponent,
     FormComponent,
     TformComponent,
-    RformComponent
+    RformComponent,
+    LabComponent,
+    CustomDatePipe
   ],
   imports: [
     BrowserModule,

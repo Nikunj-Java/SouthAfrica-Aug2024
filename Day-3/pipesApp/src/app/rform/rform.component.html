@@ -13,6 +13,7 @@
                     <input type="text" formControlName="firstname" class="form-control"
                     [ngClass]="{'is-invalid': submitted && form['firstname'].errors}">
 
+                    <!--ngClass is required to add custom validation like error messages-->
                     <!--Error Message-->
                     <div *ngIf="submitted && form['firstname'].errors" class="invalid-feedback">
                         FirstName Can't Be Empty!

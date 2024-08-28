@@ -10,6 +10,7 @@ import { ChildBComponent } from './child-b/child-b.component';
 import { FormComponent } from './form/form.component';
 import { TformComponent } from './tform/tform.component';
 import { RformComponent } from './rform/rform.component';
+import { LabComponent } from './lab/lab.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
    {path:"tform",component:TformComponent},
    {path:"rform",component:RformComponent}
  ]},
+ {path:"lab",component:LabComponent},
 ];
 
 @NgModule({

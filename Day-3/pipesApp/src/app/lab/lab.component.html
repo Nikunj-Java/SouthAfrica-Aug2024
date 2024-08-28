@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>To-Do List</h1>
+
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Task Name</label>
+      <input id="name" type="text" class="form-control" formControlName="name">
+    </div>
+
+    <div class="form-group">
+      <label for="dueDate">Due Date</label>
+      <input id="dueDate" type="date" class="form-control" formControlName="dueDate">
+    </div>
+
+    <div class="form-group">
+      <label for="priority">Priority</label>
+      <select id="priority" class="form-control" formControlName="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Task</button>
+  </form>
+
+  <h2>Your Tasks</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">
+      <strong>{{ task.name }}</strong>
+      
+      <span class="badge" [ngClass]="{
+        'bg-danger': task.priority === 'Low',
+        'bg-secondary': task.priority === 'Medium',
+        'bg-success': task.priority === 'High'
+      }">{{ task.priority }}</span>
+      <span>Due: {{ task.dueDate | customDate }}</span>
+    </li>
+  </ul>
+</div>

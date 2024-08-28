@@ -11,6 +11,10 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { GallaryComponent } from './gallary/gallary.component';
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
+import { FormComponent } from './form/form.component';
+import { TformComponent } from './tform/tform.component';
+import { RformComponent } from './rform/rform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,16 @@ import { ChildBComponent } from './child-b/child-b.component';
     ContactusComponent,
     GallaryComponent,
     ChildAComponent,
-    ChildBComponent
+    ChildBComponent,
+    FormComponent,
+    TformComponent,
+    RformComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

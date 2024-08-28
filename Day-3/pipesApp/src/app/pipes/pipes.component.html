@@ -1,3 +1,12 @@
+<div class="container">
+    <h1>Pipes Example</h1>
+    <p>There are Two Types of Pipes</p>
+    <ol>
+        <li>In-Built Pipe</li>
+        <li>Custom Pipe</li>
+    </ol>
+</div>
+
 <div style="background-color: lightblue;">
     <div class="container">
         <h2>1. Inbuilt Pipes</h2>
@@ -19,7 +28,7 @@
         <p><b>pi: </b>{{pi | number:'3.5-5'}}</p>
         <hr>
         <p><b>pi: </b>{{pi | number:'.10-10'}}</p>
-         
+
     </div>
 </div>
 
@@ -39,8 +48,8 @@
         <p><b>RAND: </b>{{b | currency:'RAND':true}}</p>
         <hr>
         <p><b>INR: </b>{{a | currency:'INR':true:'4.4-4'}}</p>
-         
-         
+
+
     </div>
 </div>
 
@@ -55,8 +64,8 @@
         <p><b>Today Date is: </b>{{today | date}}</p>
 
         <hr>
-        <p><b>Today Date in dd/MM/yyyy is: </b>{{today | date:'dd/MM/yyyy'}}</p> 
-        
+        <p><b>Today Date in dd/MM/yyyy is: </b>{{today | date:'dd/MM/yyyy'}}</p>
+
     </div>
 </div>
 
@@ -67,8 +76,8 @@
         <p><b>Without Pipes: </b>{{object}}</p>
         <hr>
         <p><b>With Pipes: </b>{{object | json}}</p>
-    
-        
+
+
     </div>
 </div>
 
@@ -79,10 +88,10 @@
         <p><b>Original String: </b>{{custom}}</p>
 
         <hr>
-        <p><b>Original String: </b>{{custom | changestring:' '}}</p>
+        <p><b>Custom String: </b>{{custom | changestring:' '}}</p>
 
         <hr>
-        <p><b>Original String: </b>{{custom | uppercase | changestring:' '}}</p>
-        
+        <p><b>Custom String: </b>{{custom | uppercase | changestring:' '}}</p>
+
     </div>
 </div>

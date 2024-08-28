@@ -1,8 +1,29 @@
-<h1>Pipes Example</h1>
-<p>There are Two Types of Pipes</p>
-<ol>
-  <li>In-Built Pipe</li>
-  <li>Custom Pipe</li>
-</ol>
+<div class="container">
+  <header>
+    <h1>My Angular App 3.0</h1>
+  </header>
 
-<app-pipes></app-pipes>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="aboutus" >About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="contactus" >Contact Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="gallary" >Gallary</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="pipes" >Pipes</a>
+    </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+ 

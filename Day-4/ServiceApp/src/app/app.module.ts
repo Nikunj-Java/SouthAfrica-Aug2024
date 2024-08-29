@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './data.service';
 import { CrudService } from './crud.service';
 import { CrudComponent } from './crud/crud.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CrudComponent } from './crud/crud.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientTestingModule,
+    FormsModule
   ],
   providers: [CrudService],
   bootstrap: [AppComponent]

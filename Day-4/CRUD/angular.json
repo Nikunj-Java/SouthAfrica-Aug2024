@@ -11,7 +11,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
+          "customWebpackConfig": {
+            "path": "./extra-webpack.config.js"
+          },
+
           "options": {
             "outputPath": "dist/crud",
             "index": "src/index.html",
@@ -61,7 +65,11 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
+          "customWebpackConfig": {
+            "path": "./extra-webpack.config.js"
+          },
+
           "configurations": {
             "production": {
               "browserTarget": "CRUD:build:production"

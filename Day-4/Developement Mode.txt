@@ -1,0 +1,4 @@
+ng build --configuration=production
+
+after running this code 
+/dist folder will be prepared in your root directory

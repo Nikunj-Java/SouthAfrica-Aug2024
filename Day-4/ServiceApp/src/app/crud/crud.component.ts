@@ -9,6 +9,12 @@ import { CrudService } from '../crud.service';
 export class CrudComponent implements OnInit {
 
   posts:any[]=[];
+
+  post={
+    id:'',
+    title:'',
+    cotent:'',
+  }
   //DI
   constructor(private service:CrudService) { }
 
@@ -21,8 +27,15 @@ export class CrudComponent implements OnInit {
   }
 
   addPost():void{
+    const data={
+      id:this.post.id,
+      title:this.post.title,
+      content:this.post.cotent,
+      
+      //file:this.currentFile,
+    }
     const newPost={title:'New Post',content:'Lorem ipsum'};
-    this.service.addPost(newPost).subscribe(()=>{this.getPosts()})
+    this.service.addPost(data).subscribe(()=>{this.getPosts()})
 
   }
 
@@ -32,7 +45,7 @@ export class CrudComponent implements OnInit {
 
   updatePosts(postId:number){
     const UpdatePost={title:'New Post Updated',content:'Lorem ipsum Updated'};
-    this.service.updatePost(postId,UpdatePost).subscribe(()=>{this.getPosts() })
+    this.service.updatePost(postId,UpdatePost).subscribe(()=>{ this.getPosts()   })
   }
 
 }

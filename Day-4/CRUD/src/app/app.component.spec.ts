@@ -14,22 +14,26 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
+  //specs-1
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    //expected Value
     expect(app).toBeTruthy();
   });
 
+  //specs-2
   it(`should have as title 'CRUD'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('CRUD');
+    //expected Value
+    expect(app.title).toEqual('CRUD APP');
   });
-
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('CRUD app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('CRUD APPLICATION');
   });
+ 
 });

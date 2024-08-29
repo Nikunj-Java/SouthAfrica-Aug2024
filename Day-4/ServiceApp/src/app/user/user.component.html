@@ -4,3 +4,24 @@
         <li>LastName: <b>{{user.lname}}</b></li>
     </ul>
 </div>
+
+<div class="container">
+    <table class="table table-bordered table-stripped table-dark">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Username</th><th>EMAIL</th><th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <td>{{u.id}}</td>
+                <td>{{u.name}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.phone}}</td>
+
+            </tr>
+        </tbody>
+        
+    </table>
+</div>

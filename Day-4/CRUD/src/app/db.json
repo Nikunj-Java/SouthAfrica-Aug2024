@@ -1,0 +1,8 @@
+{
+    "posts":[
+        {"id":1,"title":"Introduction to Angular","date":"26-09-2023"},
+        {"id":2,"title":"Basic Things in Angular","date":"27-09-2023"},
+        {"id":3,"title":"pipes,Directives,Routing in Angular","date":"28-09-2023"},
+        {"id":4,"title":"Service and Injectables,webpack,testing","date":"29-09-2023"}
+    ]
+}

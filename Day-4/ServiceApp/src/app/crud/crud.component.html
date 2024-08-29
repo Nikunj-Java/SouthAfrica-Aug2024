@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div *ngFor="let p of posts">
+        <h3 style="background-color: gainsboro;">{{p.title}}</h3>
+        <p>{{p.content}}</p>
+        <button (click)="updatePosts(p.id)" class="btn btn-primary">Update</button>
+        <button (click)=" deletePosts(p.id)" class="btn btn-danger">Delete</button>
+    </div>
+
+    
+</div>
+<div class="container">
+    <button (click)="addPost()" class="btn btn-success">Add Post</button>
+</div>
+
+<div class="container">
+    <p>Create Button for Update and Delete</p>
+</div>
